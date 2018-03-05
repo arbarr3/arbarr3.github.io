@@ -1,0 +1,96 @@
+html, body {
+	height: 100%;
+	overflow: hidden;
+	font-family: U8,Helvetica,Arial,sans-serif;
+	/*font-size: 50%;*/
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+header.tbBox, footer.tbBox {
+	width: calc(100% - 8px);
+	height: calc(8% - 3px);
+	background-color: #C0C0C0;
+	display: inline-block;
+	border-color: black;
+	border-style: solid;
+	border-width: 8px;
+}
+
+header.tbBox h1, footer.tbBox h1 {
+	margin: 0px;
+	font-weight: bold;
+	font-size: 6vh;
+}
+
+div.container {
+	height: calc(84% - 8px);
+	width: 100%;
+	font-size: 0;
+}
+
+div.gameBox {
+	border-color: black;
+	border-style: solid;
+	border-width: 8px;
+	width: calc(50% - 16px);
+	height: calc(50% - 16px);
+	display: inline-block;
+}
+
+div.gameBox h1 {
+	margin: 0px;
+	font-weight: 800;
+	font-size: 5vw;
+	letter-spacing: -.5vw;
+	transition: .5s;
+	height: 100%;
+}
+
+div.gameBox h1:hover {
+	letter-spacing: 0px;
+}
+
+div.pageBox {
+	border-color: black;
+	border-style: solid;
+	border-width: 8px;
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	position: absolute;
+	object-fit: cover;
+	/*display: none;*/
+}
+
+div.green {
+	background-color: green;
+}
+
+#greenBox:hover {
+	background: linear-gradient(to right, green, #3edd4b);
+}
+
+div.red {
+	background-color: #dd4b3e;
+}
+
+#redBox:hover {
+	background: linear-gradient(to left, #dd4b3e, red);
+}
+
+div.blue {
+	background-color: #4b3edd;
+}
+
+#blueBox:hover {
+	background: linear-gradient(to right, #4b3edd, #0000cc);
+}
+
+div.yellow {
+	background-color: #ffea37;
+}
+
+#yellowBox:hover {
+	background: linear-gradient(to left, #ffea37, #ffff4d);
+}
