@@ -1,16 +1,33 @@
 html, body {
 	height: 100%;
-	overflow: hidden;
+	
 	font-family: U8,Helvetica,Arial,sans-serif;
-	/*font-size: 50%;*/
+
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
 
+h1.collapse {
+	position: absolute;
+	top:0;
+	right: 0;
+	margin: 0;
+}
+
+h1.collapse:hover {
+	animation: spin;
+	animation-duration: 500ms;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
 header.tbBox, footer.tbBox {
-	width: calc(100% - 8px);
-	height: calc(8% - 3px);
+	width: calc(100% - 16px);
+	height: calc(8% - 13px);
 	background-color: #C0C0C0;
 	display: inline-block;
 	border-color: black;
@@ -21,7 +38,7 @@ header.tbBox, footer.tbBox {
 header.tbBox h1, footer.tbBox h1 {
 	margin: 0px;
 	font-weight: bold;
-	font-size: 6vh;
+	font-size: 4.7vh;
 }
 
 div.container {
@@ -57,10 +74,11 @@ div.pageBox {
 	border-style: solid;
 	border-width: 8px;
 	width: calc(100% - 16px);
-	height: calc(100% - 16px);
-	position: absolute;
-	object-fit: cover;
+	position: fixed;
+	left: 0;
+	top: 7%;
 	display: none;
+	font-size: 5vh;
 }
 
 div.green {
