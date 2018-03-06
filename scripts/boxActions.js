@@ -9,18 +9,22 @@ $(document).ready(function() {
 		var audioElem = document.createElement('audio');
 		switch(this.id) {
 			case 'greenBox':
+				audioElem.setAttribute('src', '/sounds/simonSound1.mp3');
 				audioElem.setAttribute('src', '/sounds/simonSound1.ogg');
 				currentlyExpanded = $("#greenPage")
 				break;
 			case 'redBox':
+				audioElem.setAttribute('src', '/sounds/simonSound2.mp3');
 				audioElem.setAttribute('src', '/sounds/simonSound2.ogg');
 				currentlyExpanded = $("#redPage")
 				break;
 			case 'blueBox':
+				audioElem.setAttribute('src', '/sounds/simonSound3.mp3');
 				audioElem.setAttribute('src', '/sounds/simonSound3.ogg');
 				currentlyExpanded = $("#bluePage")
 				break;
 			case 'yellowBox':
+				audioElem.setAttribute('src', '/sounds/simonSound4.mp3');
 				audioElem.setAttribute('src', '/sounds/simonSound4.ogg');
 				currentlyExpanded = $("#yellowPage")
 				break;
@@ -30,7 +34,7 @@ $(document).ready(function() {
 		audioElem.play();
 
 		$(currentlyExpanded).css({"display":"block"});
-		$(currentlyExpanded).animate({"height":"82%"}, 1000);
+		$(currentlyExpanded).animate({"height":"84%"}, 1000);
 	});
 	
 	$('.collapse').click(function() {
