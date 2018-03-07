@@ -34,11 +34,13 @@ $(document).ready(function() {
 		audioElem.play();
 
 		$(currentlyExpanded).css({"display":"block"});
-		$(currentlyExpanded).animate({"height":"84%"}, 1000);
+		$(currentlyExpanded).animate({"height":"84%"}, 1000, "swing", function(){$(currentlyExpanded).find(".content").fadeIn("slow");});
+		
 	});
 	
 	$('.collapse').click(function() {
-		$(currentlyExpanded).animate({"height":"0"}, 1000, "swing", function(){$(currentlyExpanded).css({"display":"none"});})
+		$(currentlyExpanded).find(".content").css({"display":"none"});
+		$(currentlyExpanded).animate({"height":"0"}, 1000, "swing", function(){$(currentlyExpanded).css({"display":"none"});});
 	});
 
 
